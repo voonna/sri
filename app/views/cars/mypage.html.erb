@@ -1,0 +1,48 @@
+
+
+
+<%#= form_for @user, :url => {:action => 'mypageshow', :name => :name, :cost => :cost}, :html => {:method => :get} do |f| %>
+<%= form_for @user, :url => {:action => 'truckinfo', :controller => 'truck', :name => :name, :cost => :cost}, :html => {:method => :get} do |f| %>
+
+
+
+
+<body><h1><p>
+<%= f.label :Username %> </br>
+<%= f.text_field :name %> </br>
+<%= f.label :car_cost %> </br>
+<%= f.text_field :cost %> </br>
+
+<style>
+body
+{
+background-image:
+url("Final.jpg");
+background-size: 1024px 900px;
+background-repeat: no-repeat;
+background-position: center down;
+}
+h1 {
+    color: blue;
+    font-family: verdana;
+    font-size: 300%;
+}
+p  {
+   
+
+    margin: 15 px;
+	color: red;
+    font-family: courier;
+    font-size: 35%;
+	}
+</style>
+
+
+</body></h1></p>
+
+
+<%= f.submit "SUBMIT" %>
+
+<% end %>
+
+
